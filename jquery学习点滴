@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>手风琴-jquery</title>
+    <style>
+        *{margin: 0;padding:0;}
+        body{
+            position: relative;
+            background: rgba(0,0,0,.5) url("images/bg.jpg") no-repeat center/cover;
+        }
+        #box{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .mask{
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background-color: rgba(0,0,0,.25);
+        }
+        .content{
+            margin: 50px auto 0;
+        }
+        h1{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ,"WenQuanYi Micro Hei" ;
+            font-size: 0;
+            font-weight: normal;
+            color: #fff;
+            text-shadow: 0 0 10px #fffcec,0 3px 10px #d7ffff;
+        }
+        #hand_piano{
+            margin: 20px auto 0;
+            width: 986px;
+            height: 100%;
+            border: 6px solid #fffd22;
+            border-radius: 12px;
+            box-shadow: 0 0 10px yellow ,0 0 20px #ffc51b ,0 0 30px #ff9f4f;
+            overflow: hidden;
+        }
+        .list{
+            width: 102%;
+            height: 100%;
+            list-style: none;
+        }
+        li{
+            float: left;
+            width: 60px;
+            height: 500px;
+            text-align: center;
+            background: no-repeat center/cover;
+            overflow: hidden;
+        }
+        li p{
+            padding: 0 22px;
+            width: 16px;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+            font-size: 16px;
+            color: #fff;
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+            -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: tb-rl;
+            letter-spacing: .5em;
+            text-align: center;
+            cursor: pointer;
+        }
+        .active{
+            font-size: 36px;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+<div id="box">
+    <div></div>
+    <div class="content">
+        <h1>天生户外</h1>
+        <div id="hand_piano">
+            <ul class="list">
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+                <li>
+                    <p>自然风光——天生户外</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <script>
+        $(document).ready(function(){
+            var $li = $("#hand_piano").find(".list li");
+            $.each($li,function(i){
+                $(this).css("backgroundImage","url(images/"+(i+1)+".jpg)");
+            });
+            $li.last().width(685);
+            $li.click(function(){
+                $("#box div:first").attr("class","mask");
+                $("#box h1").attr("class","active");
+                $(this).stop().animate({width:685},500).siblings().stop().animate({width:60},500);
+                $("body").css("backgroundImage",$(this).css("backgroundImage"));
+            })
+        });
+    </script>
+</body>
+</html>
