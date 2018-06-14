@@ -39,7 +39,7 @@
 				[E:nth-last-of-type()] ：的用法同[E:nth-of-type()]相同，不同的是:nth-last-of-type()也是从父元素的最后一个子元素开始算起。
 
 
-
+3、隐式迭代
 					
 
 
