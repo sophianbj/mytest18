@@ -1,0 +1,52 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,button,textarea,blockquote,th,td ,pre,code,*{ margin:0; padding:0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+td,th,caption { font-size:14px; }
+a{ color: #757575; text-decoration: none;}
+a:hover { color:#ff6700; text-decoration: none; }
+/*a:hover { color: #fff; }*/
+table { border-collapse:collapse; }
+ol,ul,li { list-style:none; }
+img { border:none; }
+html {font-family: sans-serif;font-size: 100%;  -ms-text-size-adjust: 100%;  -webkit-text-size-adjust: 100%;overflow-y: scroll;}
+body {font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;  color: #333;  background-color: #fff;  min-width: 1226px;}
+
+.fl{ float: left; }
+.fr{ float: right; }
+.clearfix { *zoom:1; }
+.clearfix::after,.clearfix::before {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.grid1,.grid2,.grid3,.grid4{
+    float: left;
+}
+.grid4{
+    width: 234px;
+}
+.grid16{
+    width: 992px;
+}
+.page-main{
+    background: #f5f5f5;
+}
+.container{
+    margin: 0 auto;
+    width: 1226px;
+}
+.container::after,.container::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 710684 */
+    src: url('//at.alicdn.com/t/font_710684_w379myd6qeg.eot');
+    src: url('//at.alicdn.com/t/font_710684_w379myd6qeg.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_710684_w379myd6qeg.woff') format('woff'),
+    url('//at.alicdn.com/t/font_710684_w379myd6qeg.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_710684_w379myd6qeg.svg#iconfont') format('svg');
+}

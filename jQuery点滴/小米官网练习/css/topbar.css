@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* 顶部网址导航条（容器层） */
+
+/******  顶部网址导航条start（最外层容器） ******/
+.site-topbar{
+    position: relative;
+    height: 40px;
+    background: none repeat scroll 0 0 #333;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+/* 顶部网址导航条（网址菜单选项） */
+.site-topbar .topbar-menu, .topbar-login, .topbar-shop{
+    height: 40px;
+    -webkit-text-size-adjust:none;
+}
+.site-topbar .topbar-menu, .topbar-login{
+    line-height: 40px;
+}
+.site-topbar a{
+    color: #b0b0b0;
+}
+/*顶部导航分割线*/
+.site-topbar .split{
+    margin: 0  .5em;
+    color:#424242 ;
+    font-family: sans-serif;
+}
+/* 顶部导航购物车*/
+.site-topbar .topbar-shop{
+    position: relative;
+    width: 120px;
+}
+.topbar-shop .shop-cart{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #424242;
+    font-weight: bold;
+}
+.topbar-shop  #shopbox{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 316px;
+    background: #fff;
+    font-size: 12px;
+    color: #424242;
+    box-shadow:  0 2px 10px rgba(0,0,0,.15);
+    z-index: 25;
+}
+.topbar-shop  #shopbox .goods-list{
+    margin: 5px 20px 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+.site-topbar .topbar-shop-active  .shop-cart{
+    background: #fff;
+    color: #ff6700;
+}
+/* 注册登录login以及消息提示*/
+.site-topbar .topbar-login{
+    margin-right: 15px;
+}
+.topbar-login .login-link{
+    padding: 0 5px;
+}
+.site-topbar  li .hoverwhite:hover {
+    color: #fff;
+}
+
+/******  顶部网址导航条end（最外层容器） ******/
+/******  头部选项导航start（最外层容器） ******/
+.site-head{
+    position: relative;
+    height: 100px;
+}
+.header-logo{
+    padding: 22.5px 0;
+}
+.header-logo .mi-logo{
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #ff6700;
+}
+/* 头部网址导航start */
+.header-nav{
+
+}
+.header-nav .header-nav-ctn{
+    padding: 12px 0 0 30px;
+    height: 88px;
+    font-size: 16px;
+    -webkit-text-size-adjust:none;
+}
+.header-nav .header-nav-ctn .nav-classify{
+    position: relative;
+    padding-right: 15px;
+    width: 127px;
+}
+.header-nav .header-nav-ctn .nav-classify .nav-classify-link,
+.header-nav .header-nav-ctn  .nav-list .nav-list-link{
+    display: block;
+    padding: 26px 0 38px;
+    color: #333;
+    text-align: right;
+}
+.site-classify{
+    position: absolute;
+    top: 88px;
+    left: -85px;
+    width: 234px;
+    height: 460px;
+    z-index: 40;
+}
+.site-classify-ctn{
+    margin: 0;
+    padding: 20px 0;
+    height: 418px;
+    background: #fff;
+    font-size: 14px;
+    color: #424242;
+}
+.site-classify-list{
+    height: 42px;
+    line-height: 42px;
+}
+.site-classify-list .classify-list-title{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.site-classify-list .classify-list-title i{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    font-size: 16px;
+}
+.site-classify-list-active  .classify-list-title{
+    background-color: #ff6700;
+    color: #fff;
+}
+.site-classify-list-active  .classify-list-menu{
+    display: block;
+}
+/*全部商品分类--子菜单*/
+.classify-list-menu{
+    position: absolute;
+    top: 0;
+    left: 234px;
+    height: 458px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow:0 8px 16px rgba(0,0,0,0.18);
+    z-index: 40;
+    display: none;
+}
+.menu-col-4{
+    width: 992px;
+}
+.menu-col-3{
+    width: 744px;
+}
+.menu-col-2{
+    width: 496px;
+}
+.menu-col-1{
+    width: 248px;
+}
+.classify-list-menu .classify-menu-list{
+
+}
+.classify-list-menu .classify-menu-list .classify-menu-item{
+
+}
+.classify-menu-list  .classify-menu-item{
+    display: inline-block;
+    padding: 5px 0;
+    width: 248px;
+    vertical-align: top;
+}
+.star-goods{
+    position: relative;
+    height: 76px;
+}
+.cgoods-link{
+    display: block;
+    padding: 16px 20px 17px;
+    color: #333;
+    transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+}
+.cgoods-link img{
+    padding-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+.site-classify-ctn .hover-bgmain-col{
+    background: #ff6700;
+}
+.hover-carousel-showlist{
+    display: block !important;
+}
+.header-nav .header-nav-ctn .nav-list{
+    /*vertical-align: middle;*/
+}
+.header-nav .header-nav-ctn  .nav-list .nav-list-link{
+    padding: 26px 10px 38px;
+    text-align: center;
+}
+.nav-list:hover > .nav-list-link{
+    color: #ff6700;
+}
+/* 头部选项搜索框start */
+.header-search{
+    padding: 25px 0;
+}
+.search-form{
+    position: relative;
+    height: 50px;
+    font-size: 0;
+}
+.search-form input{
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+}
+.search-text{
+    padding: 0 10px;
+    margin-right: -1px;
+    width: 245px;
+    font-size: 14px;
+    line-height: 48px;
+}
+.search-btn{
+    width: 52px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    color: #616161;
+    cursor: pointer;
+}
+.search-hotspot{
+    position: absolute;
+    top: 16px;
+    left: 60px;
+}
+.search-hotspot a{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    background: #eee;
+    font-size: 12px;
+    color:#757575;
+}
+#search_keywords{
+    display: none;
+    position: absolute;
+    width: 243px;
+    background-color: #fff;
+    border: 1px solid #ff6700;
+    border-top: none;
+    z-index: 20;
+}
+.search_keywords_list{
+
+}
+.search_keywords_item:hover{
+    background-color: #fafafa;
+}
+.search_keywords_item a{
+    display: block;
+    padding: 6px 15px;
+    font-size: 12px;
+}
+.search_keywords_tit{
+    color: #424242;
+}
+.search_keywords_num{
+    color: #b0b0b0;
+}
+.search-btn:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.search-form:hover input{
+    border-color:#b0b0b0;
+}
+.search-hotspot a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.header-search .search-form-active > input{
+    border-color:#ff6700 !important;
+}
+
+/*标签页---选项卡外层 start*/
+.header-nav .header-nav-ctn .nav-list .header-nav-submenu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fff;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    z-index: 55;
+    overflow: hidden;
+    visibility: hidden;
+}
+.header-nav .header-nav-ctn .nav-list-active .nav-list-link{
+    color: #ff6700;
+}
+.header-nav .header-nav-ctn .nav-list-active  .header-nav-submenu{
+
+    height: 229px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    visibility: visible;
+}
+.header-nav-submenu .nav-submenu-tab{
+    width: 1226px;
+    margin: 0 auto;
+}
+.header-nav-submenu .nav-submenu-tab li{
+    position: relative;
+    padding: 35px 12px 0;
+    width: 180px;
+    text-align: center;
+    background: #fff;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+.header-nav-submenu .nav-submenu-tab li::after{
+    position: absolute;
+    content: "";
+    top: 35px;
+    right: 0;
+    height: 100px;
+    border-right: 1px solid #eee;
+}
+.header-nav-submenu .nav-submenu-tab li.last::after{
+    border-right: none;
+}
+.nav-submenu-tab li > span ,.nav-submenu-tab li > a{
+    display: block;
+}
+.nav-submenu-tab li .submenu-tab-label{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.nav-submenu-tab li .submenu-tab-label .label{
+    display: inline-block;
+    padding: 1px 20px;
+    height: 18px;
+    border: 1px solid #ff6700;
+    color:#ff6700;
+}
+.nav-submenu-tab li .submenu-tab-img{
+    display: block;
+    margin: 0 auto 16px;
+    width: 160px;
+    height: 110px;
+}
+.nav-submenu-tab li .submenu-tab-img img{
+    width: 160px;
+    height: 110px;
+}
+.nav-submenu-tab li .submenu-tab-name{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+}
+.nav-submenu-tab li .submenu-tab-offer{
+    line-height: 20px;
+    color: #ff6700;
+}
+.nav-submenu-tab li.last  .submenu-tab-img {
+    border-right: none;
+}
+/******  头部选项导航end（最外层容器） ******/
