@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function startTime () {
+            var today=new Date();
+            var y=today.getFullYear();
+            var mon=today.getMonth()+1;
+            mon=changNum(mon);
+            var d=today.getDay();
+            d=changNum(d+4);
+            var h=today.getHours();
+            var m=today.getMinutes();
+            m=changNum(m);
+            var s=today.getSeconds();
+            s=changNum(s);
+            document.getElementById("time").innerHTML=y+"年"+mon+"月"+d+"日"+h+":"+m+":"+s;
+            t=setTimeout(function(){
+                startTime();
+            },500);
+        }
+
+        function changNum(i){
+            if(i<10){
+                return "0"+i;
+            }
+            return i;
+        }
+
+    </script>
+</head>
+<body onload="startTime()">
+
+<h1 id="time"></h1>
+
+</body>
+</html>
